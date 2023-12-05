@@ -23,7 +23,7 @@ function currentWeather({current, location}) {
   <div class="current-data">
     <div class="current-grades">
       <img class="weather-icon" src="http:${icon}" alt="${text}">
-      <div>${temp_c}<img src="../assets/img/celsius.png" alt="grados"></div>
+      <div>${temp_c}<img src="./assets/img/celsius.png" alt="grados"></div>
     </div>
     <ul>
       <li>Precipitaciones: ${precip_in}%</li>
