@@ -76,7 +76,7 @@ body {
   filter: invert(1);
 }
 .header img {
-  width: 50px;
+  width: 30px;
 }
 
 .main {
@@ -139,6 +139,9 @@ body:not(#index) .footer {
 #index section {
   width: 50%;
   height: 50vh;
+}
+#index .links-container {
+  min-height: 500px;
 }
 
 .time-container, .pass-container {
@@ -230,6 +233,8 @@ input[type="text"], input[type="number"] {
 }
 
 .password-result span {
+  display: block;
+  padding: 5px;
   font-weight: normal;
   color: #ffe5c1;
 }
@@ -325,7 +330,7 @@ button {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  min-height: 500px;
+  height: 400px;
   padding: 20px;
   overflow: scroll;
   
@@ -377,6 +382,48 @@ button {
   border-radius: 5px;
 
 }
+
+@media (max-width: 900px) {
+  #index section {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+  section:nth-child(3) {
+    display: none;
+  }
+  .time-container {
+    margin-bottom: 50px;
+    order: -1;
+  }
+  .list-container {
+    margin-bottom: 50px;
+  }
+  #index .links-container {
+    height: 210px;
+    min-height: auto;
+  }
+  #index .list {
+    margin-top: 0;
+  }
+  
+}
+
+/* .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+} */
+
+/* #index .main {
+  flex-wrap: wrap;
+  align-items: start;
+  width: 100vw;
+  height: 100vh; 
+} */
 
 
 
