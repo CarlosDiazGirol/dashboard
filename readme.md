@@ -17,8 +17,10 @@ Desde el index se podrá acceder a cada página, y habrá cambios si está dentr
 Aquí puedes ver el ejemplo:
 `https://carlosdiazgirol.github.io/dashboard/`
 
-Una vez tengamos el proyecto finalizado, también puede ser antes, lo subiremos a github pages para poder verlo en internet. Para poder subir nuestro proyecto a github pages previamente lo tendremos que tener en nuestro repositorio. Una vez ahí iremos a `settings` (está en el menú de cabecera) y dentro aparecerá en el menú lateral `pages`. Clicka y al entra solo tienes que seleccionar la `branch`(rama) `main`. Y pulsaremos `SAVE`.
-Esperaremos un par de minutos, refrescaremos esa página y nos dará una URL. Ahí podremos ver nuestro proyecto ya en internet.
+Es un ejemplo de como lo puedes hacer pero puedes dar rienda suelta tu imaginación, siempre y cuando cumplas con los objetivos. Simepre puedes añadir más funcionalidades si lo deseas.
+
+Una vez tengas el proyecto finalizado, también puede ser antes, lo subiras a github pages para poder verlo en internet. Para poder subir nuestro proyecto a github pages previamente lo tendremos que tener en nuestro repositorio. Una vez ahí iremos a `settings` (está en el menú de cabecera) y dentro aparecerá en el menú lateral `pages`. Clicka y al entrar solo tienes que seleccionar la `branch`(rama) `main`. Y pulsaremos `SAVE`.
+Esperaremos un par de minutos, refrescaremos esa página y nos dará una URL. Ahí podras ver tu proyecto en internet.
 
 
 Vamos a ver que hay que hacer en cada uno de los proyectos: 
@@ -26,11 +28,11 @@ Vamos a ver que hay que hacer en cada uno de los proyectos:
 ## Reloj digital 24h + Fecha:
 
 ### ¿Como funciona?
-Crea un página en la que tendrá lo siguiente:
+Crea un página que tendrá lo siguiente:
 
-Un reloj digital con la fecha y hora actual del lugar en el que te encuentres. Tendrá las sigientes características: 
+Un reloj digital con la fecha y hora actual del lugar en el que te encuentres. Tendrá las siguientes características: 
 - Por un lado tendremos un reloj digital con horas, minutos y segundos que se tendrá que actualizar automaticamente cada segundo que pase.
-- Tendremos que formatear las hora. Si las horas, minutos y segundos son menores de 10 habrá que añadir un 0 delante para que quede como 01, 02, ...
+- Tendrás que formatear las hora. Si las horas, minutos y segundos son menores de 10 habrá que añadir un 0 delante para que quede como 01, 02, ...
 - La fecha tendrá formato DD/MM/AAAA 
 - Aparecerán unas frases dependiendo un intervalo de horas. Doy una de ejemplo aunque puedes cambiarlas a tu gusto:
   - Desde las 00:01 hasta las 07:00 Es hora de descansar. Apaga y sigue mañana
@@ -49,17 +51,16 @@ Un reloj digital con la fecha y hora actual del lugar en el que te encuentres. T
 - La hora debe actualizarse sola, es decir que si cambia la hora, el minuto o el segundo deben cambiar automaticamente en pantalla. Piensa en la unidad mínima que se necesita para hacer ese cambio. La fecha también debe cambiar. Para esto podemos usar `setInterval()`
 - Necesitaremos condicionales para las frases. Dependiendo la hora saldrá una u otra
 
-### PISTAS
+### PISTAS PISTAS Y CONSEJOS
 - Aquí tienes como usar el constructor de fechas. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
 - Aquí los métodos necesarios para componerlo todo https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
 - Aquí lo que hace y como funciona `setInterval()` https://developer.mozilla.org/es/docs/Web/API/setInterval 
 
-___________________________________________
 
 ## Generador de contraseñas seguras:
 
 ### ¿Como funciona?
-Crea una página en la que tendrá lo siguiente:
+Crea una página que tendrá lo siguiente:
 - Tendrá entre 12 caracteres como mínimo y 50 de máximo. Se podrá elegir el número de caracteres
 - Se compondrá de mayúsculas, minúsculas, números y símbolos. Mínimo una de cada.
 - Tendremos un input dónde meteremos la longitud de la contraseña y un botón para que nos de el resultado.
@@ -72,15 +73,14 @@ Crea una página en la que tendrá lo siguiente:
 - Números: "0123456789"
 - Símbolos "!@#$%^&*()-_=+"
 
-### PISTAS
-- Aquí tienes como usar el constructor de fechas. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
-- Aquí los métodos necesarios para componerlo todo https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
-- Aquí lo que hace y como funciona `setInterval()` https://developer.mozilla.org/es/docs/Web/API/setInterval 
+### PISTAS Y CONSEJOS
+- Guarda cada uno de los datos (mayúsculas, minúsculas, símbolos y núemeros) en una variable para poder recorrerlos.
+- Usa bucles y condicionales
 
 ## Listado de links:
 
 ### ¿Como funciona?
-Crea una página en la que tendrá lo siguiente:
+Crea una página que tendrá lo siguiente:
 - Tendremos 2 inputs. Uno de ellos será el título que aparecerá en cada uno de nuestros elementos. Al pulsar el botón de `añadir link` se añadirá en el DOM pero también en nuestro `localStorage` para poder recuperarlo siempre.
 - Cada uno de los elementos tendrá el nombre que hemos añadido y el enlace al pulsar sobre él (ya sea el texto o el bloque completo). También tendrá un botón de eliminar si ya no vamos a hacer uso de él.
 - Será un listado de links que funcionará de la misma manera tanto en la página independiente como en el dashboard.
@@ -90,14 +90,14 @@ Crea una página en la que tendrá lo siguiente:
 - `CreateElement`, `appedChild`, ... o directamente un template con `innerHTML`.
 - `LocalStorage` para generar persistencia y guardar esos datos.
 
-### PISTAS
+### PISTAS Y CONSEJOS
 - Guarda el dato en el `localStorage` a la vez que se crea en el `DOM`
 - Cuando se carga la página el dato del `LocalStorage` deberá aparecer de inicio
 
 ## Estación meteorológica:
 
 ### ¿Como funciona?
-Crea una página en la que tendrá lo siguiente:
+Crea una página que tendrá lo siguiente:
 - El tiempo en el momento en el que accedemos a la página con varios elementos:
   - Ciudad y Pais. Pondremos la ciudad y País en el que nos encontramos.
   - El estado del clima.
@@ -115,7 +115,7 @@ Crea una página en la que tendrá lo siguiente:
  - Este es un ejemplo de endpoint con la APIKEY y la ciudad. Solo habría que cambiar los datos de `${apiKey}` por la nuestra y `${ciudad}` por la elegida por nosotros `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&aqi=no`
 - `fetch` para hacer peticiones a la API.
 
-### PISTAS
+### PISTAS Y CONSEJOS
 - La URL base es `http` cámbiala desde el inicio por `https` para no tener problemas en el futuro de bloqueos de seguridad.
 - Usa `promesas` o `ASYNC/AWAIT` para crear la asincronía en las peticiopnes `fetch`
 - Piensa si necesitas solo un endpoint o varios. Revisa que trae cada petición.
@@ -131,9 +131,9 @@ Todas las páginas de tu proyecto tendrán una imagen random de background. Camb
 - En esta página `https://unsplash.com/es` podrás sacar imagenes de calidad de manera gratuíta. Puedes elegir otras páginas sin problema. O directamente desde goolge. Usa 10 minagenes mínimo para darle más dinamismo
 - Estilos en línea que añadiremos con JS. 
   - Este puede ser un ejemplo: `document.body.style.backgroundColor = "url('mi-imagen.jpg')"`;
-- `setInterval` para darle ese tiempod de cambio
+- `setInterval` para darle ese tiempo de cambio
 
-### PISTAS
+### PISTAS Y CONSEJOS
 Puedes generar de inicio una imagen de fondo por CSS o directamente hacer que la función se invoque y luego cada 15 segundos, o el tiempo que decidas.
 
 _____________________________________________
@@ -147,3 +147,4 @@ _____________________________________________
 - Crea un script diferente por cada una de las partes. Luego puedes poner en cada archivo HTML los scripts necesarios. 1,2... o todos.
 - Línea que se escribe, programa que se prueba. console.log() para todo. Es más fácil solucionar paso a paso que hacer ingeniería inversa.
 - Las rutas que se escriben para las imagens que hagamos dentro de nuestros JS, cuando renderizan es probable que de error cuando esté subida a `github pages`. Revisa tus rutas relativas `./` o `../`
+- Usa internet para buscar soluciones. No las copies, entiendelás y hazlas tuyas.
